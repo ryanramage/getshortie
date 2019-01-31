@@ -1,6 +1,6 @@
 {
   "name": "getshortie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use shortend path names to do similar to lodash get",
   "main": "index.js",
   "scripts": {
