@@ -1,5 +1,5 @@
 {
-  "name": "getshorty",
+  "name": "getshortie",
   "version": "1.0.0",
   "description": "Use shortend path names to do similar to lodash get",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanramage/getshorty.git"
+    "url": "git+https://github.com/ryanramage/getshortie.git"
   },
   "keywords": [
     "get",
@@ -20,9 +20,9 @@
   "author": "Ryan Ramage",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ryanramage/getshorty/issues"
+    "url": "https://github.com/ryanramage/getshortie/issues"
   },
-  "homepage": "https://github.com/ryanramage/getshorty#readme",
+  "homepage": "https://github.com/ryanramage/getshortie#readme",
   "devDependencies": {
     "tap": "^12.5.0",
     "tape": "^4.9.2"

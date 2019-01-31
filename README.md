@@ -1,4 +1,4 @@
-getshort
+getshortie
 =========
 
 Use shortend path names to do similar to lodash get
@@ -31,4 +31,4 @@ get(obj, 't.l') // 1
 get(obj, 't.n.i.h') // 'ryan'
 ```
 
-used in [Pilot](https://github.com/hundredrabbits/Pilot) and [Orca](https://github.com/hundredrabbits/Orca) to save space when setting effect values on nested objects 
+used in [Pilot](https://github.com/hundredrabbits/Pilot) and [Orca](https://github.com/hundredrabbits/Orca) to save space when setting effect values on nested objects
