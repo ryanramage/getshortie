@@ -1,5 +1,5 @@
 const test = require('tape')
-const get = require('../')
+const shortie = require('../')
 let obj = {
   the: {
     long: 1,
@@ -21,15 +21,22 @@ let obj = {
 }
 
 test('normal paths work', t => {
-  t.equals(4, get(obj, 'a'))
-  t.equals(1, get(obj, 'the.long'))
-  t.equals('ryan', get(obj, 'the.name.is.here'))
+  t.equals(4, shortie.get(obj, 'a'))
+  t.equals(1, shortie.get(obj, 'the.long'))
+  t.equals('ryan', shortie.get(obj, 'the.name.is.here'))
   t.end()
 })
 
 test('short paths work', t => {
-  t.equals(4, get(obj, 'a'))
-  t.equals(1, get(obj, 't.l'))
-  t.equals('ryan', get(obj, 't.n.i.h'))
+  t.equals(4, shortie.get(obj, 'a'))
+  t.equals(1, shortie.get(obj, 't.l'))
+  t.equals('ryan', shortie.get(obj, 't.n.i.h'))
+  t.end()
+})
+
+test('find the full path', t => {
+  t.equals('a', shortie.path(obj, 'a'))
+  t.equals('the.long', shortie.path(obj, 't.l'))
+  t.equals('the.name.is.here', shortie.path(obj, 't.n.i.h'))
   t.end()
 })
